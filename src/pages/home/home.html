@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color:danger>
+    <ion-title>
+     Enter your Details
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list no-list>
+  <ion-item>
+    <ion-label fixed>firstname</ion-label>
+    <ion-input type="text"  [(ngModel)]="firstname"></ion-input>
+  </ion-item>
+
+  
+  <ion-item>
+    <ion-label fixed>lastname</ion-label>
+    <ion-input type="text"  [(ngModel)]="lastname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Age</ion-label>
+    <ion-input  type="number"  [(ngModel)]="age"></ion-input>
+  </ion-item>
+
+  
+ 
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+
+ <button class="btn" full (click)="goDetailsPage()" >go to details page</button>
+</ion-list>
+</ion-content>
